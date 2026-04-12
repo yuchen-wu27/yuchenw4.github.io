@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dogs - Pet Care Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Pet Care Guide</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Choosing the Right Pet</a>
+      <a href="#">Pet Categories</a>
+      <a href="#">Common Mistakes</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main class="animal-page">
+
+    <h2>Birds</h2>
+
+    <img src="IMAGE/Adoption-bird.png" alt="Bird">
+
+    <p>Pet Care Guide Birds Bird name is a lovely girl, and she ....</p>
+
+  </main>
+
+</body>
+</html>

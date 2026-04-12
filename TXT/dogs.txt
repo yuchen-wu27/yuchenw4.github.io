@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dogs - Pet Care Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Pet Care Guide</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Choosing the Right Pet</a>
+      <a href="#">Pet Categories</a>
+      <a href="#">Common Mistakes</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main class="animal-page">
+
+    <h2>Dogs</h2>
+
+    <img src="IMAGE/Adoption-dog.png" alt="Dog">
+
+    <p>Dog name is a friendly dog, she lives in the shelter already 2 months. Because of the law if she doesn't find a home in 1 week, she will leave from this world forever.
+</p>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dogs - Pet Care Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Pet Care Guide</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Choosing the Right Pet</a>
+      <a href="#">Pet Categories</a>
+      <a href="#">Common Mistakes</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main class="animal-page">
+
+    <h2>Other</h2>
+
+    <img src="IMAGE/Adoption-turtle.png" alt="Other">
+
+    <p>Turtle is very long-lived; if you take good care of it, it can stay with you until you become a grandfather or grandmother.</p>
+
+  </main>
+
+</body>
+</html>

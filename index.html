@@ -22,71 +22,115 @@
   <section class="hero">
     <h2>Welcome to Pet Care Guide</h2>
     <p>Learn how to care for your pet the right way.</p>
+    <img src="IMAGE/image1.png" alt="Pet banner">
   </section>
 
   <main>
 
-    <section>
-      <h2>Welcome</h2>
-      <p>
-        This website helps first-time pet owners learn how to properly care for their pets.
-        We provide simple and reliable information to help you make responsible decisions.
-      </p>
+    <section class="adoption-section">
+      <h2>Connect Shelter</h2>
+
+      <div class="adoption-row">
+        <button class="arrow-btn" type="button">&#9664;</button>
+
+        <a class="pet-card" href="dogs.html">
+          <div class="pet-title">Dog</div>
+          <div class="pet-image-box">
+            <img src="IMAGE/Adoption-dog.png" alt="Adoption dog">
+          </div>
+          <div class="pet-bottom">Pet name</div>
+        </a>
+
+        <a class="pet-card" href="cats.html">
+          <div class="pet-title">Cat</div>
+          <div class="pet-image-box">
+            <img src="IMAGE/Adoption-cat.png" alt="Adoption cat">
+          </div>
+          <div class="pet-bottom">Pet name</div>
+        </a>
+
+        <a class="pet-card" href="birds.html">
+          <div class="pet-title">Bird</div>
+          <div class="pet-image-box">
+            <img src="IMAGE/Adoption-bird.png" alt="Adoption bird">
+          </div>
+          <div class="pet-bottom">Pet name</div>
+        </a>
+
+        <a class="pet-card" href="fish.html">
+          <div class="pet-title">Fish</div>
+          <div class="pet-image-box">
+            <img src="IMAGE/Adoption-fish.png" alt="Adoption fish">
+          </div>
+          <div class="pet-bottom">Pet name</div>
+        </a>
+
+        <a class="pet-card" href="#">
+          <div class="pet-title">Other</div>
+          <div class="pet-image-box">
+            <img src="IMAGE/Adoption-turtle.png" alt="Adoption turtle">
+          </div>
+          <div class="pet-bottom">Pet name</div>
+        </a>
+
+        <button class="arrow-btn" type="button">&#9654;</button>
+      </div>
     </section>
 
-    <section>
-      <h2>Checklist Before Getting a Pet</h2>
-      <ul>
-        <li>Time commitment – Do you have enough time daily?</li>
-        <li>Financial responsibility – Food, vet, supplies</li>
-        <li>Living space – Apartment or house?</li>
-        <li>Long-term care – Pets live many years</li>
-      </ul>
-    </section>
+    <section class="lower-grid">
 
-    <section>
-      <h2>Adoption List</h2>
-      <p>Explore different types of pets:</p>
-      <ul>
-        <li><a href="dogs.html">Dogs</a></li>
-        <li><a href="cats.html">Cats</a></li>
-        <li><a href="birds.html">Birds</a></li>
-        <li><a href="fish.html">Fish</a></li>
-        <li><a href="other-animals.html">Other animals</a></li>
-      </ul>
-    </section>
+      <div class="left-column">
 
-    <section>
-      <h2>Announcement</h2>
-      <p>
-        Remember: Adopting a pet is a long-term responsibility.
-        Always choose adoption over buying and give animals a loving home.
-      </p>
-    </section>
+        <section class="announcement-box">
+          <h2>Adopt &amp; Don’t Shop</h2>
+          <p>Choosing adoption gives animals a second chance and helps more pets find loving homes.</p>
+          <video controls>
+            <source src="VIDEO/Adopt-DontShop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </section>
 
-    <section>
-      <h2>Contact Us</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <section class="connect-box">
+          <h3>Connect Us</h3>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text">
+          </form>
+        </section>
 
-        <input type="submit" value="Submit" class="btn">
-      </form>
+      </div>
+
+      <section class="checklist-box">
+        <h2>Checklist Before Getting a Pet</h2>
+        <ul>
+          <li>Time commitment – Do you have enough time daily?</li>
+          <li>Financial responsibility – Food, vet, supplies</li>
+          <li>Living space – Apartment or house?</li>
+          <li>Long-term care – Pets live many years</li>
+          <li>Training and behavior</li>
+          <li>Family agreement</li>
+        </ul>
+      </section>
+
     </section>
 
   </main>
 
   <footer>
-    <p>© 2026 Pet Care Guide</p>
+    <div class="footer-box">
+      <div>Follow Us</div>
+      <div>Privacy</div>
+      <div>Contact Info</div>
+    </div>
   </footer>
 
 </body>
