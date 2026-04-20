@@ -30,25 +30,16 @@
     </div>
 
     <a href="#">Common Mistakes</a>
+
     <div class="dropdown">
-  <a href="#" class="dropbtn">Contact</a>
-
-  <div class="dropdown-content">
-
-    <a href="https://secure.aspca.org/donate/ps-gn-p2?" target="_blank">
-      ASPCA
-    </a>
-
-    <a href="https://www.americanhumane.org/?" target="_blank">
-      HUMANE SOCIETY
-    </a>
-
-    <a href="mailto:yuchenw4@asu.edu">
-      yuchenw4@asu.edu
-    </a>
-
-  </div>
-</div>
+      <a href="#" class="dropbtn">Contact</a>
+      <div class="dropdown-content">
+        <a href="https://secure.aspca.org/donate/ps-gn-p2?" target="_blank">ASPCA</a>
+        <a href="https://www.americanhumane.org/?" target="_blank">HUMANE SOCIETY</a>
+        <a href="mailto:yuchenw4@asu.edu">yuchenw4@asu.edu</a>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <section class="hero">
@@ -70,7 +61,7 @@
         <div class="pet-image-box">
           <img src="IMAGE/Adoption-dog.png" alt="Dog">
         </div>
-        <div class="pet-bottom"> Kelly </div>
+        <div class="pet-bottom">Kelly</div>
       </a>
 
       <a class="pet-card" href="cats.html">
@@ -78,7 +69,7 @@
         <div class="pet-image-box">
           <img src="IMAGE/Adoption-cat.png" alt="Cat">
         </div>
-        <div class="pet-bottom"> Mini </div>
+        <div class="pet-bottom">Mini</div>
       </a>
 
       <a class="pet-card" href="birds.html">
@@ -86,7 +77,7 @@
         <div class="pet-image-box">
           <img src="IMAGE/Adoption-bird.png" alt="Bird">
         </div>
-        <div class="pet-bottom"> Barbie </div>
+        <div class="pet-bottom">Barbie</div>
       </a>
 
       <a class="pet-card" href="fish.html">
@@ -122,24 +113,27 @@
 
         <video controls>
           <source src="VIDEO/Adopt-DontShop.mp4" type="video/mp4">
+          Your browser does not support the video tag.
         </video>
       </section>
 
       <section class="connect-box">
         <h3>Connect Us</h3>
 
-        <form>
+        <form class="contact-form" action="#" method="post">
           <label for="name">Name:</label>
-          <input type="text" id="name">
+          <input type="text" id="name" name="name">
 
           <label for="email">Email:</label>
-          <input type="email" id="email">
+          <input type="email" id="email" name="email">
 
           <label for="phone">Phone:</label>
-          <input type="tel" id="phone">
+          <input type="tel" id="phone" name="phone">
 
-          <label for="text">Text:</label>
-          <input type="text" id="text">
+          <label for="message">Text:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit" class="submit-btn">Submit</button>
         </form>
       </section>
 
@@ -147,7 +141,8 @@
 
     <section class="checklist-box">
       <h2>Checklist Before Getting a Pet</h2>
-  <div class="checklist-image-wrap">
+
+      <div class="checklist-image-wrap">
         <img src="IMAGE/image2.png" alt="Pet Love" class="checklist-photo">
       </div>
 
@@ -172,13 +167,13 @@
         A pet’s life is short, but their love is infinite.
         Make sure you’re ready.
       </p>
+    </section>
 
   </section>
 
 </main>
 
 <footer>
-
   <div class="footer-box">
     <div>Follow Us</div>
     <div>Privacy</div>
@@ -189,7 +184,6 @@
     <p>© 2026 Pet Care Guide</p>
     <p>yuchenw4@asu.edu</p>
   </div>
-
 </footer>
 
 </body>

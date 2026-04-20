@@ -546,4 +546,22 @@ footer {
     width: 36px;
     min-width: 36px;
   }
+.submit-btn{
+    display:block;
+    margin:20px auto 0;
+    padding:12px 35px;
+    background-color:#B8C0DA;
+    color:#ffffff;
+    border:none;
+    border-radius:12px;
+    font-size:20px;
+    font-family:"Times New Roman", serif;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.submit-btn:hover{
+    background-color:#9FA9CC;
+}
 }
