@@ -2,136 +2,190 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Pet Care Guide helps users choose and care for pets responsibly.">
+  <meta name="keywords" content="pets, pet care, adoption, dogs, cats, birds, fish">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet Care Guide</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>Pet Care Guide</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#">Choosing the Right Pet</a>
-      <a href="#">Pet Categories</a>
-      <a href="#">Common Mistakes</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Pet Care Guide</h1>
 
-  <section class="hero">
-    <h2>Welcome to Pet Care Guide</h2>
-    <p>Learn how to care for your pet the right way.</p>
-    <img src="IMAGE/image1.png" alt="Pet banner">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Choosing the Right Pet</a>
+
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Pet Categories</a>
+      <div class="dropdown-content">
+        <a href="dogs.html">Dogs</a>
+        <a href="cats.html">Cats</a>
+        <a href="birds.html">Birds</a>
+        <a href="fish.html">Fish</a>
+        <a href="other-animals.html">Others</a>
+      </div>
+    </div>
+
+    <a href="#">Common Mistakes</a>
+    <div class="dropdown">
+  <a href="#" class="dropbtn">Contact</a>
+
+  <div class="dropdown-content">
+
+    <a href="https://secure.aspca.org/donate/ps-gn-p2?" target="_blank">
+      ASPCA
+    </a>
+
+    <a href="https://www.americanhumane.org/?" target="_blank">
+      HUMANE SOCIETY
+    </a>
+
+    <a href="mailto:yuchenw4@asu.edu">
+      yuchenw4@asu.edu
+    </a>
+
+  </div>
+</div>
+</header>
+
+<section class="hero">
+  <h2>Welcome to Pet Care Guide</h2>
+  <p>Learn how to care for your pet the right way.</p>
+  <img src="IMAGE/image1.png" alt="Pet banner">
+</section>
+
+<main>
+
+  <section class="adoption-section">
+    <h2>Connect Shelter</h2>
+
+    <div class="adoption-row">
+      <button class="arrow-btn" type="button">&#9664;</button>
+
+      <a class="pet-card" href="dogs.html">
+        <div class="pet-title">Dog</div>
+        <div class="pet-image-box">
+          <img src="IMAGE/Adoption-dog.png" alt="Dog">
+        </div>
+        <div class="pet-bottom"> Kelly </div>
+      </a>
+
+      <a class="pet-card" href="cats.html">
+        <div class="pet-title">Cat</div>
+        <div class="pet-image-box">
+          <img src="IMAGE/Adoption-cat.png" alt="Cat">
+        </div>
+        <div class="pet-bottom"> Mini </div>
+      </a>
+
+      <a class="pet-card" href="birds.html">
+        <div class="pet-title">Bird</div>
+        <div class="pet-image-box">
+          <img src="IMAGE/Adoption-bird.png" alt="Bird">
+        </div>
+        <div class="pet-bottom"> Barbie </div>
+      </a>
+
+      <a class="pet-card" href="fish.html">
+        <div class="pet-title">Fish</div>
+        <div class="pet-image-box">
+          <img src="IMAGE/Adoption-fish.png" alt="Fish">
+        </div>
+        <div class="pet-bottom">Gold fish</div>
+      </a>
+
+      <a class="pet-card" href="other-animals.html">
+        <div class="pet-title">Other</div>
+        <div class="pet-image-box">
+          <img src="IMAGE/Adoption-turtle.png" alt="Turtle">
+        </div>
+        <div class="pet-bottom">Tommy</div>
+      </a>
+
+      <button class="arrow-btn" type="button">&#9654;</button>
+    </div>
   </section>
 
-  <main>
+  <section class="lower-grid">
 
-    <section class="adoption-section">
-      <h2>Connect Shelter</h2>
+    <div class="left-column">
 
-      <div class="adoption-row">
-        <button class="arrow-btn" type="button">&#9664;</button>
+      <section class="announcement-box">
+        <h2>Adopt &amp; Don’t Shop</h2>
+        <p>
+          Choosing adoption gives animals a second chance
+          and helps more pets find loving homes.
+        </p>
 
-        <a class="pet-card" href="dogs.html">
-          <div class="pet-title">Dog</div>
-          <div class="pet-image-box">
-            <img src="IMAGE/Adoption-dog.png" alt="Adoption dog">
-          </div>
-          <div class="pet-bottom">Pet name</div>
-        </a>
-
-        <a class="pet-card" href="cats.html">
-          <div class="pet-title">Cat</div>
-          <div class="pet-image-box">
-            <img src="IMAGE/Adoption-cat.png" alt="Adoption cat">
-          </div>
-          <div class="pet-bottom">Pet name</div>
-        </a>
-
-        <a class="pet-card" href="birds.html">
-          <div class="pet-title">Bird</div>
-          <div class="pet-image-box">
-            <img src="IMAGE/Adoption-bird.png" alt="Adoption bird">
-          </div>
-          <div class="pet-bottom">Pet name</div>
-        </a>
-
-        <a class="pet-card" href="fish.html">
-          <div class="pet-title">Fish</div>
-          <div class="pet-image-box">
-            <img src="IMAGE/Adoption-fish.png" alt="Adoption fish">
-          </div>
-          <div class="pet-bottom">Pet name</div>
-        </a>
-
-        <a class="pet-card" href="#">
-          <div class="pet-title">Other</div>
-          <div class="pet-image-box">
-            <img src="IMAGE/Adoption-turtle.png" alt="Adoption turtle">
-          </div>
-          <div class="pet-bottom">Pet name</div>
-        </a>
-
-        <button class="arrow-btn" type="button">&#9654;</button>
-      </div>
-    </section>
-
-    <section class="lower-grid">
-
-      <div class="left-column">
-
-        <section class="announcement-box">
-          <h2>Adopt &amp; Don’t Shop</h2>
-          <p>Choosing adoption gives animals a second chance and helps more pets find loving homes.</p>
-          <video controls>
-            <source src="VIDEO/Adopt-DontShop.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </section>
-
-        <section class="connect-box">
-          <h3>Connect Us</h3>
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone">
-
-            <label for="text">Text:</label>
-            <input type="text" id="text" name="text">
-          </form>
-        </section>
-
-      </div>
-
-      <section class="checklist-box">
-        <h2>Checklist Before Getting a Pet</h2>
-        <ul>
-          <li>Time commitment – Do you have enough time daily?</li>
-          <li>Financial responsibility – Food, vet, supplies</li>
-          <li>Living space – Apartment or house?</li>
-          <li>Long-term care – Pets live many years</li>
-          <li>Training and behavior</li>
-          <li>Family agreement</li>
-        </ul>
+        <video controls>
+          <source src="VIDEO/Adopt-DontShop.mp4" type="video/mp4">
+        </video>
       </section>
 
+      <section class="connect-box">
+        <h3>Connect Us</h3>
+
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email">
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone">
+
+          <label for="text">Text:</label>
+          <input type="text" id="text">
+        </form>
+      </section>
+
+    </div>
+
+    <section class="checklist-box">
+      <h2>Checklist Before Getting a Pet</h2>
+
+      <p class="checklist-intro">
+        Before you bring a pet home, please give yourself 3 minutes.
+      </p>
+
+      <ul class="pet-checklist">
+        <li><span class="check-icon">◻︎</span><span class="check-text">Can you handle shedding or fur care?</span></li>
+        <li><span class="check-icon">◻︎</span><span class="check-text">How much time can you spend with them every day?</span></li>
+        <li><span class="check-icon">◻︎</span><span class="check-text">Can you walk your dog 2–3 times a day? (If you choose a dog)</span></li>
+        <li><span class="check-icon">◻︎</span><span class="check-text">Do you know their basic diet and how much they should eat?</span></li>
+        <li><span class="check-icon">◻︎</span><span class="check-text">Are you prepared for the long-term responsibility (5–30 years)? (Different pets have different lifespans, but they all need a forever home)</span></li>
+        <li><span class="check-icon">◻︎</span><span class="check-text">Can you afford routine care and general maintenance?</span></li>
+        <li><span class="check-icon">◻︎</span><span class="check-text">Can you love them like your own family?</span></li>
+        <li><span class="check-icon">◻︎</span><span class="check-text">Are you willing to learn about their behavior and needs?</span></li>
+        <li><span class="check-icon">◻︎</span><span class="check-text">Can you accept shedding, odors, noise, scratching, biting, or damaged furniture?</span></li>
+        <li><span class="check-icon">◻︎</span><span class="check-text">If they grow old or become sick, will you still stay by their side?</span></li>
+      </ul>
+
+      <p class="checklist-ending">
+        A pet’s life is short, but their love is infinite.
+        Make sure you’re ready.
+      </p>
+
+      <div class="checklist-image-wrap">
+        <img src="IMAGE/image2.png" alt="Pet Love" class="checklist-photo">
+      </div>
     </section>
 
-  </main>
+  </section>
 
-  <footer>
-    <div class="footer-box">
-      <div>Follow Us</div>
-      <div>Privacy</div>
-      <div>Contact Info</div>
-    </div>
-  </footer>
+</main>
+
+<footer>
+  <div class="footer-box">
+    <div>Follow Us</div>
+    <div>Privacy</div>
+    <div>Contact Info</div>
+  </div>
+</footer>
 
 </body>
 </html>

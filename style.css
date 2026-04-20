@@ -32,6 +32,7 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   padding: 8px 0 6px 0;
+  position: relative;
 }
 
 nav a {
@@ -44,6 +45,58 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+}
+
+/* DROPDOWN */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  min-width: 260px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  padding: 14px 0;
+  z-index: 999;
+  text-align: center;
+}
+
+
+.dropdown-content a {
+  display: block;
+  color: #5675bb;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #eef2ff;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* HERO */
@@ -85,13 +138,12 @@ main {
   padding: 18px 24px 24px 24px;
 }
 
-
 .adoption-section h2,
 .announcement-box h2,
 .checklist-box h2,
 .connect-box h3,
 .footer-box {
-  color: #b8c0d8;   
+  color: #b8c0d8;
   font-size: 2.1rem;
   font-weight: bold;
   text-align: center;
@@ -159,7 +211,6 @@ main {
 .pet-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #111111;
 }
 
 .pet-image-box {
@@ -175,7 +226,6 @@ main {
 
 .pet-bottom {
   font-size: 1.1rem;
-  color: #111111;
 }
 
 /* LOWER GRID */
@@ -200,7 +250,7 @@ main {
   padding: 24px;
 }
 
-/* VIDEO SECTION */
+/* VIDEO */
 .announcement-box {
   text-align: center;
 }
@@ -213,18 +263,14 @@ main {
   margin: 0 0 15px 0;
   font-size: 1.1rem;
   line-height: 1.5;
-  text-align: center;
-  color: #111111;
 }
 
 .announcement-box video {
   width: 100%;
   border-radius: 20px;
-  display: block;
-  margin: 0 auto;
 }
 
-/* CONNECT FORM */
+/* CONNECT */
 .connect-box h3 {
   margin: 0 0 20px 0;
 }
@@ -246,41 +292,68 @@ main {
   background: transparent;
   padding: 6px 4px;
   font-size: 1rem;
-  outline: none;
   width: 100%;
-}
-
-.connect-box textarea {
-  min-height: 100px;
-  resize: vertical;
+  outline: none;
 }
 
 /* CHECKLIST */
-.checklist-box h2 {
-  margin: 0 0 20px 0;
+.checklist-box {
+  padding: 26px 30px;
 }
 
-.checklist-box ul {
+.checklist-box h2 {
+  margin: 0 0 22px 0;
+}
+
+.checklist-intro {
+  margin: 0 0 24px 0;
+  font-size: 1.45rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.pet-checklist {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
 }
 
-.checklist-box li {
-  position: relative;
-  padding-left: 36px;
-  margin-bottom: 26px;
-  font-size: 1.1rem;
-  line-height: 1.4;
+.pet-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
 }
 
-.checklist-box li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0;
+.check-icon {
   font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+.check-text {
+  font-size: 1.22rem;
+  line-height: 1.45;
+}
+
+.checklist-ending {
+  margin: 28px 0 0 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
   font-weight: bold;
+}
+
+.checklist-image-wrap {
+  width: 100%;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.checklist-photo {
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* FOOTER */
@@ -296,6 +369,133 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 1.8rem;
+  color: #b8c0d8;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-contact {
+  text-align: center;
+  margin-top: 26px;
+}
+
+.footer-contact-label {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #111111;
+}
+
+.footer-contact a {
+  color: #111111;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.footer-contact a:hover {
+  color: #5675bb;
+}
+/* ======================
+   ANIMAL PAGES
+====================== */
+
+.animal-page {
+  padding: 18px 24px 24px 24px;
+}
+
+.animal-box {
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  padding: 28px;
+}
+
+.animal-box h2 {
+  margin: 0 0 28px 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #111111;
+  text-align: center;
+}
+
+.animal-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.animal-left {
+  background-color: white;
+  border-radius: 24px;
+  padding: 18px;
+}
+
+.animal-left img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+.animal-right {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.animal-info-box,
+.animal-table-box {
+  background-color: white;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.animal-info-box h3,
+.animal-table-box h3 {
+  margin: 0 0 18px 0;
+  color: #b8c0d8;
+  font-size: 2.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.animal-info-box p {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1.6;
+}
+
+/* TABLE */
+.pet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pet-table th,
+.pet-table td {
+  border: 2px solid #8a8a8a;
+  padding: 14px 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+  vertical-align: top;
+}
+
+.pet-table th {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pet-table td:first-child,
+.pet-table th:first-child {
+  width: 90px;
+  text-align: center;
+}
+
+.pet-table td:nth-child(2),
+.pet-table th:nth-child(2) {
+  width: 280px;
 }
 
 /* RESPONSIVE */
@@ -306,6 +506,19 @@ footer {
 
   .arrow-btn {
     display: none;
+  }
+
+  .animal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .animal-left {
+    max-width: 430px;
+  }
+
+  .dropdown-content {
+    min-width: 95vw;
+    white-space: normal;
   }
 }
 
@@ -325,8 +538,8 @@ footer {
 
   .footer-box {
     flex-direction: column;
-    text-align: center;
     gap: 12px;
+    text-align: center;
   }
 
   header h1 {
@@ -341,11 +554,23 @@ footer {
     font-size: 1.3rem;
   }
 
-  .adoption-section h2,
-  .announcement-box h2,
-  .checklist-box h2,
-  .connect-box h3,
-  .footer-box {
+  .animal-box h2 {
+    font-size: 2.5rem;
+  }
+
+  .animal-info-box h3,
+  .animal-table-box h3 {
     font-size: 1.8rem;
+  }
+
+  .pet-table th,
+  .pet-table td {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
   }
 }
