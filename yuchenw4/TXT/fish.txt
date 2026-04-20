@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Fish adoption information and care checklist from Pet Care Guide.">
+  <meta name="keywords" content="fish, pet care, aquarium, fish tank, fish supplies">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish - Pet Care Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Pet Care Guide</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Choosing the Right Pet</a>
+    <a href="#">Pet Categories</a>
+    <a href="#">Common Mistakes</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main class="animal-page">
+
+  <section class="animal-box">
+
+    <h2>Fish</h2>
+
+    <div class="animal-layout">
+
+      <!-- LEFT IMAGE -->
+      <div class="animal-left">
+        <img src="IMAGE/Adoption-fish.png" alt="Fish in aquarium">
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="animal-right">
+
+        <!-- INFORMATION -->
+        <section class="animal-info-box">
+          <h3>Information</h3>
+
+          <p>
+            Although fish are a popular beginner pet, they still require
+            proper care, clean water, and a suitable environment.
+            Learning before bringing one home is very important.
+          </p>
+        </section>
+
+        <!-- TABLE -->
+        <section class="animal-table-box">
+          <h3>Fish Essentials</h3>
+
+          <table class="pet-table">
+
+            <tr>
+              <th>Check</th>
+              <th>Supplies</th>
+              <th>Notes</th>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Fish Tank</td>
+              <td>Choose the right size based on species and number of fish.</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Fish Food</td>
+              <td>Use food suitable for the type of fish.</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Decoration</td>
+              <td>Add plants or hiding places that fit their behavior.</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Air Pump</td>
+              <td>Select one that matches the tank size and capacity.</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Heater</td>
+              <td>Maintain the proper water temperature if needed.</td>
+            </tr>
+
+          </table>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-box">
+    <div>Follow Us</div>
+    <div>Privacy</div>
+    <div>Contact Info</div>
+  </div>
+</footer>
+
+</body>
+</html>
