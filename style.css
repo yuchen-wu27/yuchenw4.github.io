@@ -15,6 +15,8 @@ header {
   color: white;
   text-align: center;
   padding: 22px 20px 16px 20px;
+  position: relative;
+  z-index: 1000;
 }
 
 header h1 {
@@ -33,6 +35,7 @@ nav {
   width: 100%;
   padding: 8px 0 6px 0;
   position: relative;
+  z-index: 9999;
 }
 
 nav a {
@@ -67,9 +70,9 @@ nav a:hover {
   background-color: #ffffff;
   min-width: 260px;
   border-radius: 18px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
   padding: 14px 0;
-  z-index: 999;
+  z-index: 9999;
   text-align: center;
 }
 
@@ -149,6 +152,8 @@ main {
   border-radius: 30px;
   padding: 22px;
   margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
 }
 
 .adoption-section h2 {
@@ -173,6 +178,14 @@ main {
   padding: 0 8px;
 }
 
+.arrow-btn:hover {
+  transform: scale(1.08);
+}
+
+.arrow-btn:active {
+  transform: scale(0.95);
+}
+
 /* PET CARD */
 .pet-card {
   width: 190px;
@@ -187,6 +200,10 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 14px 12px;
+}
+
+.pet-card:hover {
+  transform: translateY(-4px);
 }
 
 .pet-title {
@@ -304,14 +321,14 @@ main {
 }
 
 .check-icon {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 1;
-  width: 48px;
-  min-width: 48px;
+  width: 42px;
+  min-width: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0;
+  margin-top: 2px;
 }
 
 .check-text {
@@ -412,6 +429,7 @@ footer {
 .animal-left img {
   width: 100%;
   border-radius: 20px;
+  display: block;
 }
 
 .animal-right {
@@ -465,6 +483,29 @@ footer {
 }
 
 /* RESPONSIVE */
+@media (max-width: 1200px) {
+  .adoption-row {
+    flex-wrap: wrap;
+  }
+
+  .arrow-btn {
+    display: none;
+  }
+
+  .animal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .animal-left {
+    max-width: 430px;
+  }
+
+  .dropdown-content {
+    min-width: 95vw;
+    white-space: normal;
+  }
+}
+
 @media (max-width: 900px) {
   nav {
     justify-content: center;
@@ -494,5 +535,15 @@ footer {
 
   .hero p {
     font-size: 1.3rem;
+  }
+
+  .checklist-box h2 {
+    font-size: 2.2rem;
+  }
+
+  .check-icon {
+    font-size: 1.9rem;
+    width: 36px;
+    min-width: 36px;
   }
 }
