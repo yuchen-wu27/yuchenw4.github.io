@@ -550,9 +550,9 @@ footer {
     display:block;
     margin:20px auto 0;
     padding:12px 35px;
-    background-color:#B8C0DA;
-    color:#ffffff;
-    border:none;
+    background-color:#B8C0DA !important;
+    color:#ffffff !important;
+    border:none !important;
     border-radius:12px;
     font-size:20px;
     font-family:"Times New Roman", serif;
@@ -562,6 +562,7 @@ footer {
 }
 
 .submit-btn:hover{
-    background-color:#9FA9CC;
+    background-color:#9FA9CC !important;
+}
 }
 }
