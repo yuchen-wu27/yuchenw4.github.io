@@ -105,11 +105,18 @@
 </main>
 
 <footer>
+
   <div class="footer-box">
     <div>Follow Us</div>
     <div>Privacy</div>
     <div>Contact Info</div>
   </div>
+
+  <div class="copyright">
+    <p>© 2026 Pet Care Guide</p>
+    <p>yuchenw4@asu.edu</p>
+  </div>
+
 </footer>
 
 </body>

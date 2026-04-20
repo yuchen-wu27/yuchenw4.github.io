@@ -58,7 +58,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* DROPDOWN */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -74,7 +73,6 @@ nav a:hover {
   text-align: center;
 }
 
-
 .dropdown-content a {
   display: block;
   color: #5675bb;
@@ -84,7 +82,6 @@ nav a:hover {
   padding: 14px 20px;
   border-bottom: 1px solid #eeeeee;
 }
-
 
 .dropdown-content a:last-child {
   border-bottom: none;
@@ -109,7 +106,6 @@ nav a:hover {
 }
 
 .hero h2 {
-  order: 1;
   margin: 0 0 4px 0;
   color: #5b75bd;
   font-size: 3.5rem;
@@ -117,7 +113,6 @@ nav a:hover {
 }
 
 .hero p {
-  order: 2;
   margin: 0 0 8px 0;
   color: #5b75bd;
   font-size: 1.6rem;
@@ -125,7 +120,6 @@ nav a:hover {
 }
 
 .hero img {
-  order: 3;
   width: 100%;
   max-width: 1900px;
   height: auto;
@@ -169,7 +163,6 @@ main {
   flex-wrap: nowrap;
 }
 
-/* ARROW */
 .arrow-btn {
   background: none;
   border: none;
@@ -178,14 +171,6 @@ main {
   color: black;
   line-height: 1;
   padding: 0 8px;
-}
-
-.arrow-btn:hover {
-  transform: scale(1.08);
-}
-
-.arrow-btn:active {
-  transform: scale(0.95);
 }
 
 /* PET CARD */
@@ -204,17 +189,9 @@ main {
   padding: 14px 12px;
 }
 
-.pet-card:hover {
-  transform: translateY(-4px);
-}
-
 .pet-title {
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-.pet-image-box {
-  width: 100%;
 }
 
 .pet-card img {
@@ -303,6 +280,7 @@ main {
 
 .checklist-box h2 {
   margin: 0 0 22px 0;
+  font-size: 2.5rem;
 }
 
 .checklist-intro {
@@ -326,13 +304,20 @@ main {
 }
 
 .check-icon {
-  font-size: 1.6rem;
-  line-height: 1.25;
+  font-size: 2.5rem;
+  line-height: 1;
+  width: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
 }
 
 .check-text {
   font-size: 1.22rem;
   line-height: 1.45;
+  flex: 1;
 }
 
 .checklist-ending {
@@ -374,31 +359,27 @@ footer {
   text-align: center;
 }
 
-.footer-contact {
+/* COPYRIGHT */
+.copyright {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 26px;
+  color: black;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  line-height: 1.1;
 }
 
-.footer-contact-label {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-  color: #111111;
+.copyright p {
+  margin: 0;
+  padding: 0;
 }
 
-.footer-contact a {
-  color: #111111;
-  text-decoration: underline;
-  font-size: 1.2rem;
-  font-weight: normal;
-}
-
-.footer-contact a:hover {
-  color: #5675bb;
-}
-/* ======================
-   ANIMAL PAGES
-====================== */
-
+/* ANIMAL PAGES */
 .animal-page {
   padding: 18px 24px 24px 24px;
 }
@@ -413,7 +394,6 @@ footer {
   margin: 0 0 28px 0;
   font-size: 3.2rem;
   font-weight: bold;
-  color: #111111;
   text-align: center;
 }
 
@@ -421,7 +401,6 @@ footer {
   display: grid;
   grid-template-columns: 420px 1fr;
   gap: 28px;
-  align-items: start;
 }
 
 .animal-left {
@@ -433,7 +412,6 @@ footer {
 .animal-left img {
   width: 100%;
   border-radius: 20px;
-  display: block;
 }
 
 .animal-right {
@@ -454,7 +432,6 @@ footer {
   margin: 0 0 18px 0;
   color: #b8c0d8;
   font-size: 2.1rem;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -475,16 +452,10 @@ footer {
   border: 2px solid #8a8a8a;
   padding: 14px 12px;
   font-size: 1.2rem;
-  line-height: 1.5;
-  text-align: left;
-  vertical-align: top;
 }
 
 .pet-table th {
-  font-size: 1.3rem;
-  font-weight: bold;
   text-align: center;
-  vertical-align: middle;
 }
 
 .pet-table td:first-child,
@@ -493,35 +464,7 @@ footer {
   text-align: center;
 }
 
-.pet-table td:nth-child(2),
-.pet-table th:nth-child(2) {
-  width: 280px;
-}
-
 /* RESPONSIVE */
-@media (max-width: 1200px) {
-  .adoption-row {
-    flex-wrap: wrap;
-  }
-
-  .arrow-btn {
-    display: none;
-  }
-
-  .animal-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .animal-left {
-    max-width: 430px;
-  }
-
-  .dropdown-content {
-    min-width: 95vw;
-    white-space: normal;
-  }
-}
-
 @media (max-width: 900px) {
   nav {
     justify-content: center;
@@ -539,7 +482,6 @@ footer {
   .footer-box {
     flex-direction: column;
     gap: 12px;
-    text-align: center;
   }
 
   header h1 {
@@ -552,25 +494,5 @@ footer {
 
   .hero p {
     font-size: 1.3rem;
-  }
-
-  .animal-box h2 {
-    font-size: 2.5rem;
-  }
-
-  .animal-info-box h3,
-  .animal-table-box h3 {
-    font-size: 1.8rem;
-  }
-
-  .pet-table th,
-  .pet-table td {
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  .dropdown-content a {
-    display: block;
-    padding: 10px;
   }
 }

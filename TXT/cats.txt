@@ -2,34 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dogs - Pet Care Guide</title>
+  <meta name="description" content="Cat adoption information and care checklist from Pet Care Guide.">
+  <meta name="keywords" content="cats, adoption, pet care, cat supplies, shelter cat">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cats - Pet Care Guide</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Pet Care Guide</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#">Choosing the Right Pet</a>
-      <a href="#">Pet Categories</a>
-      <a href="#">Common Mistakes</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Pet Care Guide</h1>
 
-  <!-- Content -->
-  <main class="animal-page">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Choosing the Right Pet</a>
+    <a href="#">Pet Categories</a>
+    <a href="#">Common Mistakes</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main class="animal-page">
+
+  <section class="animal-box">
 
     <h2>Cats</h2>
 
-    <img src="IMAGE/Adoption-cat.png" alt="Cat">
+    <div class="animal-layout">
 
-    <p>Cat name's life full of hardships, but he still believes that who can love him forever.</p>
+      <!-- LEFT IMAGE -->
+      <div class="animal-left">
+        <img src="IMAGE/Adoption-cat.png" alt="Cat waiting for adoption">
+      </div>
 
-  </main>
+      <!-- RIGHT CONTENT -->
+      <div class="animal-right">
+
+        <!-- INFORMATION -->
+        <section class="animal-info-box">
+          <h3>Information</h3>
+
+          <p>
+            Mini has experienced a difficult life, but he still believes
+            there is someone who can love him forever. He is gentle,
+            calm, and waiting for a warm home.
+          </p>
+        </section>
+
+        <!-- TABLE -->
+        <section class="animal-table-box">
+          <h3>Cat Essentials</h3>
+
+          <table class="pet-table">
+
+            <tr>
+              <th>Check</th>
+              <th>Supplies</th>
+              <th>Notes</th>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Litter Box</td>
+              <td>Keep clean daily.</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Cat Food</td>
+              <td>Indoor or outdoor formula.</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Scratching Post</td>
+              <td>Protect furniture.</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>Carrier</td>
+              <td>Useful for vet visits and travel.</td>
+            </tr>
+
+          </table>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <div class="footer-box">
+    <div>Follow Us</div>
+    <div>Privacy</div>
+    <div>Contact Info</div>
+  </div>
+
+  <div class="copyright">
+    <p>© 2026 Pet Care Guide</p>
+    <p>yuchenw4@asu.edu</p>
+  </div>
+
+</footer>
 
 </body>
 </html>
